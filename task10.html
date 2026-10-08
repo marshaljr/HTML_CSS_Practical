@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/c4c41a2319.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #card {
+            width: 245px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .search {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #image {
+            padding-bottom: 18px;
+            object-fit: cover;
+        }
+
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .search button {
+            background-color: rgb(39, 37, 37);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+        }
+
+        .city {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="card">
+        <div id="image">
+            <img src="img.jpg" alt="image" width="260px" height="200px">
+        </div>
+        <div class="city">
+            <h2>San Francisco</h2>
+            <p>This is paragraph.</p>
+        </div>
+        <div class="price">
+            <span>
+                <i class="fa-solid fa-tag"></i>
+                <span>From $240</span>
+            </span>
+            <span>SFO</span>
+        </div>
+        <div class="search">
+            <button>Search</button>
+            <span><i class="fa-regular fa-heart" style="color: rgb(211, 75, 75);"></i></span>
+        </div>
+    </section>
+</body>
+
+</html>
